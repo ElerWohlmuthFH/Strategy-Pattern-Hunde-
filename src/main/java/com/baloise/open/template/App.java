@@ -22,7 +22,10 @@ public class App {
 
     /**
      * @param args
+     *
      */
+
+
     public static void main(String[] args) {
         Husky husky = new Husky(); //Defaultverhalten
         husky.bellen(); //ganz leise bellen...
