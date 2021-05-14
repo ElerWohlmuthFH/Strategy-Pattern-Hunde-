@@ -24,6 +24,53 @@ public class App {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Husky husky = new Husky(); //Defaultverhalten
+        husky.bellen(); //ganz leise bellen...
+        husky.setBellVerhalten(new LautBellen()); //Verhalten dynamisch setzen
+        husky.bellen(); //GANZ LAUT BELLEN!!!
     }
 }
+class NormalLaufen implements LaufVerhalten{
+    public void laufen() {
+        System.out.println("Normal laufen.");
+    }
+}
+
+class SchnellLaufen implements LaufVerhalten {
+    public void laufen() {
+        System.out.println("Schnell laufen.");
+    }
+}
+
+class KannNichtLaufen implements LaufVerhalten{
+    public void laufen() {
+        System.out.println("Kann doch gar nicht laufen.");
+    }
+}
+
+class Humpeln implements LaufVerhalten{
+    public void laufen() {
+        System.out.println("Humpeln.");
+    }
+}
+
+class LeiseBellen implements BellVerhalten {
+    public void bellen() {
+        System.out.println("ganz leise bellen...");
+    }
+}
+
+class LautBellen implements BellVerhalten{
+    public void bellen() {
+        System.out.println("GANZ LAUT BELLEN!!");
+    }
+}
+
+class ElektronischBellen implements BellVerhalten {
+    public void bellen() {
+        System.out.println("Elekkkkktronisch Bellen!");
+    }
+}
+
+
+
