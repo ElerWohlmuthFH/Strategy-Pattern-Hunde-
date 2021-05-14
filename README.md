@@ -1,3 +1,7 @@
+source: https://www.philipphauer.de/study/se/design-pattern/strategy.php
+
+
+
 # repository-template-java
 A template to use when starting a new open source project.
 
