@@ -15,9 +15,7 @@
  */
 package com.baloise.open.template;
 
-/**
- * @author Markus Tiede
- */
+
 public class App {
 
     /**
@@ -33,47 +31,9 @@ public class App {
         husky.bellen(); //GANZ LAUT BELLEN!!!
     }
 }
-class NormalLaufen implements LaufVerhalten{
-    public void laufen() {
-        System.out.println("Normal laufen.");
-    }
-}
 
-class SchnellLaufen implements LaufVerhalten {
-    public void laufen() {
-        System.out.println("Schnell laufen.");
-    }
-}
 
-class KannNichtLaufen implements LaufVerhalten{
-    public void laufen() {
-        System.out.println("Kann doch gar nicht laufen.");
-    }
-}
 
-class Humpeln implements LaufVerhalten{
-    public void laufen() {
-        System.out.println("Humpeln.");
-    }
-}
-
-class LeiseBellen implements BellVerhalten {
-    public void bellen() {
-        System.out.println("ganz leise bellen...");
-    }
-}
-
-class LautBellen implements BellVerhalten{
-    public void bellen() {
-        System.out.println("GANZ LAUT BELLEN!!");
-    }
-}
-
-class ElektronischBellen implements BellVerhalten {
-    public void bellen() {
-        System.out.println("Elekkkkktronisch Bellen!");
-    }
-}
 
 
 
